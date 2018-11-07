@@ -65,7 +65,7 @@ namespace Livro.View
 
         private void srcBtn_Click(object sender, EventArgs e)
         {
-            Model.Livro objetoLivro = new Model.Livro(Convert.ToDateTime(datecalendarinsert.Text));
+            DateTime src = Convert.ToDateTime(datecalendarselect);
         }
     }
 }

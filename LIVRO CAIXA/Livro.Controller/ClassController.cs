@@ -11,22 +11,22 @@ namespace Livro.Controller
     {
         public static void InsertController(Model.Livro objetoLivro)
         {
-
+            Model.LivroDao.InsertDao(objetoLivro);
         }
 
         public static void DeleteController(string id)
         {
-            
+            Model.LivroDao.DeleteDao(id);
         }
 
         public static void UpdateController(Model.Livro objetoLivro, string id)
         {
-
+            Model.LivroDao.UpdateDao(objetoLivro, id);
         }
 
         public static void SelectController(DateTime calendar)
         {
-
+            Model.LivroDao.SelectDao(calendar);
         }
 
 

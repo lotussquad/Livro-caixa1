@@ -14,3 +14,9 @@ C:\Users\BarryFallens\Documents\GitHub\Livro-caixa\LIVRO CAIXA\Livro.Model\obj\D
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.csproj.CoreCompileInputs.cache
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.dll
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.pdb
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\bin\Debug\Livro.Model.dll
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\bin\Debug\Livro.Model.pdb
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.csprojAssemblyReference.cache
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.csproj.CoreCompileInputs.cache
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.dll
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.pdb

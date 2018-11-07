@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TabControl = new System.Windows.Forms.TabControl();
             this.TabInserir = new System.Windows.Forms.TabPage();
+            this.insertBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.datecalendarinsert = new System.Windows.Forms.DateTimePicker();
@@ -46,7 +47,6 @@
             this.folhainsertTxt = new System.Windows.Forms.TextBox();
             this.eventinsertTxt = new System.Windows.Forms.TextBox();
             this.TabDelete = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.iddeletelbl = new System.Windows.Forms.Label();
             this.deleteBtn = new System.Windows.Forms.Button();
@@ -76,7 +76,6 @@
             this.datesrclbl = new System.Windows.Forms.Label();
             this.datecalendarselect = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.TabControl.SuspendLayout();
             this.TabInserir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -104,7 +103,7 @@
             // TabInserir
             // 
             this.TabInserir.BackColor = System.Drawing.Color.White;
-            this.TabInserir.Controls.Add(this.button1);
+            this.TabInserir.Controls.Add(this.insertBtn);
             this.TabInserir.Controls.Add(this.label4);
             this.TabInserir.Controls.Add(this.pictureBox4);
             this.TabInserir.Controls.Add(this.datecalendarinsert);
@@ -125,6 +124,16 @@
             this.TabInserir.Size = new System.Drawing.Size(677, 355);
             this.TabInserir.TabIndex = 0;
             this.TabInserir.Text = "INSERIR ";
+            // 
+            // insertBtn
+            // 
+            this.insertBtn.Location = new System.Drawing.Point(197, 263);
+            this.insertBtn.Name = "insertBtn";
+            this.insertBtn.Size = new System.Drawing.Size(282, 68);
+            this.insertBtn.TabIndex = 36;
+            this.insertBtn.Text = "INSERIR NO LIVRO";
+            this.insertBtn.UseVisualStyleBackColor = true;
+            this.insertBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -246,7 +255,6 @@
             // TabDelete
             // 
             this.TabDelete.BackColor = System.Drawing.Color.White;
-            this.TabDelete.Controls.Add(this.label1);
             this.TabDelete.Controls.Add(this.pictureBox3);
             this.TabDelete.Controls.Add(this.iddeletelbl);
             this.TabDelete.Controls.Add(this.deleteBtn);
@@ -257,13 +265,6 @@
             this.TabDelete.Size = new System.Drawing.Size(677, 355);
             this.TabDelete.TabIndex = 1;
             this.TabDelete.Text = "EXCLUIR";
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 0;
             // 
             // pictureBox3
             // 
@@ -539,16 +540,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(452, 271);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(197, 263);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(282, 68);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "INSERIR NO LIVRO";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -622,11 +613,10 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button insertBtn;
     }
 }
 

@@ -45,7 +45,8 @@ namespace Livro.View
         {
 
 
-            Model.Livro objetoLivro = new Model.Livro(Convert.ToDateTime(datecalendarinsert.Text), eventinsertTxt.Text, livroinsertTxt.Text, folhainsertTxt.Text, receitasinsertTxt.Text, despesasinsertTxt.Text);
+            Model.Livro objetoLivro = new Model.Livro(Convert.ToDateTime(datecalendarinsert.Text), eventinsertTxt.Text, Convert.ToInt32(livroinsertTxt.Text), Convert.ToInt32(folhainsertTxt.Text), Convert.ToDecimal(receitasinsertTxt.Text), Convert.ToDecimal(despesasinsertTxt.Text));
+
             ClassController.InsertController(objetoLivro);
         }
 

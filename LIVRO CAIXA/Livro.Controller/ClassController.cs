@@ -9,12 +9,12 @@ namespace Livro.Controller
 {
     public class ClassController
     {
-        public static void InsertController()
+        public static void InsertController(Model.Livro objetolivro)
         {
 
         }
 
-        public static void DeleteController()
+        public static void DeleteController(Model.Livro )
         {
 
         }

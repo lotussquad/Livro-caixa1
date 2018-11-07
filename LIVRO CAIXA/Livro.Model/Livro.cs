@@ -8,6 +8,7 @@ namespace Livro.Model
 {
     public class Livro
     {
+        private int id;
         private DateTime data;
         private string evento;
         private int numLivro;
@@ -15,8 +16,9 @@ namespace Livro.Model
         private decimal receitas;
         private decimal despesas;
 
-        public Livro(DateTime data, string evento, int numLivro, int numFolha, decimal receitas, decimal despesas)
+        public Livro(int id, DateTime data, string evento, int numLivro, int numFolha, decimal receitas, decimal despesas)
         {
+            this.Id = id;
             this.Data = data;
             this.Evento = evento;
             this.NumLivro = numLivro;
@@ -25,6 +27,7 @@ namespace Livro.Model
             this.Despesas = despesas;
         }
 
+        public int Id { get => id; set => id = value; }
         public DateTime Data { get => data; set => data = value; }
         public string Evento { get => evento; set => evento = value; }
         public int NumLivro { get => numLivro; set => numLivro = value; }

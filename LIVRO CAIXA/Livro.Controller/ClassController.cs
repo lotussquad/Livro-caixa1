@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Livro.Model;
+using System.Data;
+using System.Data.Sql;
 
 namespace Livro.Controller
 {
@@ -26,7 +28,7 @@ namespace Livro.Controller
 
         public static void SelectController(DateTime calendar)
         {
-            Model.LivroDao.SelectDao(calendar);
+            return Model.LivroDao.SelectDao(calendar);
         }
 
 

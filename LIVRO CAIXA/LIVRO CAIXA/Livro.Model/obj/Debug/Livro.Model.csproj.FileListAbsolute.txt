@@ -1,0 +1,4 @@
+C:\Users\17000004486\documents\visual studio 2015\Projects\LIVRO CAIXA\Livro.Model\bin\Debug\Livro.Model.dll
+C:\Users\17000004486\documents\visual studio 2015\Projects\LIVRO CAIXA\Livro.Model\bin\Debug\Livro.Model.pdb
+C:\Users\17000004486\documents\visual studio 2015\Projects\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.dll
+C:\Users\17000004486\documents\visual studio 2015\Projects\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.pdb

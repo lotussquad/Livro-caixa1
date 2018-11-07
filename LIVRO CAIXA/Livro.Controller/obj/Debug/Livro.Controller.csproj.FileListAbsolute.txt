@@ -21,3 +21,16 @@ C:\Users\BarryFallens\Documents\GitHub\Livro-caixa\LIVRO CAIXA\Livro.Controller\
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.csproj.CopyComplete
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.dll
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.pdb
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Controller.dll
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Controller.pdb
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Model.dll
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Model.pdb
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.csprojAssemblyReference.cache
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.csproj.CoreCompileInputs.cache
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.csproj.CopyComplete
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.dll
+C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.pdb
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.csprojAssemblyReference.cache
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.csproj.CoreCompileInputs.cache
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.pdb

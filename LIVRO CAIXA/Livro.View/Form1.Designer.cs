@@ -76,6 +76,7 @@
             this.datesrclbl = new System.Windows.Forms.Label();
             this.datecalendarselect = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.srcBtn = new System.Windows.Forms.Button();
             this.TabControl.SuspendLayout();
             this.TabInserir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -469,10 +470,12 @@
             this.updateBtn.TabIndex = 15;
             this.updateBtn.Text = "EDITAR NO LIVRO";
             this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // TabSelect
             // 
             this.TabSelect.BackColor = System.Drawing.Color.White;
+            this.TabSelect.Controls.Add(this.srcBtn);
             this.TabSelect.Controls.Add(this.label2);
             this.TabSelect.Controls.Add(this.pictureBox1);
             this.TabSelect.Controls.Add(this.relatorioBtn);
@@ -519,7 +522,7 @@
             // datesrclbl
             // 
             this.datesrclbl.AutoSize = true;
-            this.datesrclbl.Location = new System.Drawing.Point(511, 102);
+            this.datesrclbl.Location = new System.Drawing.Point(512, 62);
             this.datesrclbl.Name = "datesrclbl";
             this.datesrclbl.Size = new System.Drawing.Size(107, 13);
             this.datesrclbl.TabIndex = 29;
@@ -527,7 +530,7 @@
             // 
             // datecalendarselect
             // 
-            this.datecalendarselect.Location = new System.Drawing.Point(466, 118);
+            this.datecalendarselect.Location = new System.Drawing.Point(466, 81);
             this.datecalendarselect.Name = "datecalendarselect";
             this.datecalendarselect.Size = new System.Drawing.Size(200, 20);
             this.datecalendarselect.TabIndex = 28;
@@ -539,6 +542,16 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(452, 271);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // srcBtn
+            // 
+            this.srcBtn.Location = new System.Drawing.Point(527, 107);
+            this.srcBtn.Name = "srcBtn";
+            this.srcBtn.Size = new System.Drawing.Size(75, 23);
+            this.srcBtn.TabIndex = 35;
+            this.srcBtn.Text = "BUSCAR";
+            this.srcBtn.UseVisualStyleBackColor = true;
+            this.srcBtn.Click += new System.EventHandler(this.srcBtn_Click);
             // 
             // Form1
             // 
@@ -617,6 +630,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button insertBtn;
+        private System.Windows.Forms.Button srcBtn;
     }
 }
 

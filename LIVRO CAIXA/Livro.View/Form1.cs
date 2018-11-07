@@ -21,7 +21,8 @@ namespace Livro.View
 
         private void deletBtn_Click(object sender, EventArgs e)
         {
-
+            string id = iddeleteTxt.Text;
+            ClassController.DeleteController(id);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -53,6 +54,18 @@ namespace Livro.View
         private void despesasinsertTxt_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            Model.Livro objetoLivro = new Model.Livro(Convert.ToDateTime(datecalendarinsert.Text), eventinsertTxt.Text, Convert.ToInt32(livroinsertTxt.Text), Convert.ToInt32(folhainsertTxt.Text), Convert.ToDecimal(receitasinsertTxt.Text), Convert.ToDecimal(despesasinsertTxt.Text));
+            string id = idupdateTxt.Text;
+            ClassController.UpdateController(objetoLivro, id);
+        }
+
+        private void srcBtn_Click(object sender, EventArgs e)
+        {
+            Model.Livro objetoLivro = new Model.Livro(Convert.ToDateTime(datecalendarinsert.Text));
         }
     }
 }

@@ -70,13 +70,13 @@
             this.eventupdateTxt = new System.Windows.Forms.TextBox();
             this.updateBtn = new System.Windows.Forms.Button();
             this.TabSelect = new System.Windows.Forms.TabPage();
+            this.srcBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.relatorioBtn = new System.Windows.Forms.Button();
             this.datesrclbl = new System.Windows.Forms.Label();
             this.datecalendarselect = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.srcBtn = new System.Windows.Forms.Button();
             this.TabControl.SuspendLayout();
             this.TabInserir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -489,6 +489,16 @@
             this.TabSelect.TabIndex = 3;
             this.TabSelect.Text = "RELATÓRIO";
             // 
+            // srcBtn
+            // 
+            this.srcBtn.Location = new System.Drawing.Point(527, 107);
+            this.srcBtn.Name = "srcBtn";
+            this.srcBtn.Size = new System.Drawing.Size(75, 23);
+            this.srcBtn.TabIndex = 35;
+            this.srcBtn.Text = "BUSCAR";
+            this.srcBtn.UseVisualStyleBackColor = true;
+            this.srcBtn.Click += new System.EventHandler(this.srcBtn_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -534,6 +544,7 @@
             this.datecalendarselect.Name = "datecalendarselect";
             this.datecalendarselect.Size = new System.Drawing.Size(200, 20);
             this.datecalendarselect.TabIndex = 28;
+            this.datecalendarselect.ValueChanged += new System.EventHandler(this.datecalendarselect_ValueChanged);
             // 
             // dataGridView1
             // 
@@ -542,16 +553,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(452, 271);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // srcBtn
-            // 
-            this.srcBtn.Location = new System.Drawing.Point(527, 107);
-            this.srcBtn.Name = "srcBtn";
-            this.srcBtn.Size = new System.Drawing.Size(75, 23);
-            this.srcBtn.TabIndex = 35;
-            this.srcBtn.Text = "BUSCAR";
-            this.srcBtn.UseVisualStyleBackColor = true;
-            this.srcBtn.Click += new System.EventHandler(this.srcBtn_Click);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form1
             // 

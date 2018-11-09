@@ -21,14 +21,18 @@ namespace Livro.Controller
             Model.LivroDao.DeleteDao(id);
         }
 
-        public static void UpdateController(Model.Livro objetoLivro, string id)
+        public static void UpdateController(Model.Livro objetoLivro, int id)
         {
             Model.LivroDao.UpdateDao(objetoLivro, id);
         }
 
-        public static void SelectController(DateTime calendar)
+        public static List<Model.Livro> SelectController()
         {
-            return Model.LivroDao.SelectDao(calendar);
+            Model.Livro livro = new Model.Livro();
+            List<Model.Livro> livros = new List<Model.Livro>();
+
+            livros =  Model.LivroDao.SelectDao();
+            return livros;
         }
 
 

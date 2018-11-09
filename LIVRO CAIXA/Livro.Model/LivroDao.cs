@@ -24,7 +24,7 @@ namespace Livro.Model
                 db.AddParameter("@numfolha", objetolivro.NumFolha, DbType.Int32);
                 db.AddParameter("@receitas", objetolivro.Receitas, DbType.Decimal);
                 db.AddParameter("@despesas", objetolivro.Despesas, DbType.Decimal);
-                db.ExecuteNoQuery("INSERT into Dados (ID, Data, Evento, Livro, Folha, Receitas, Despesas) values (@data, @evento, @numlivro, @numfolha, @receitas, @despesas)");
+                db.ExecuteNoQuery("INSERT into Dados (Data, Evento, Livro, Folha, Receita, Despesas) values (@data, @evento, @numlivro, @numfolha, @receitas, @despesas)");
              
         }
 
@@ -40,7 +40,7 @@ namespace Livro.Model
 
         }
 
-        public static void UpdateDao(Model.Livro objetolivro, string id)
+        public static void UpdateDao(Model.Livro objetolivro, int id)
         {
             Model.DataBase db = new Model.DataBase();
 
@@ -53,17 +53,32 @@ namespace Livro.Model
             db.AddParameter("@receitas", objetolivro.Receitas, DbType.Decimal);
             db.AddParameter("@despesas", objetolivro.Despesas, DbType.Decimal);
 
-            db.ExecuteNoQuery("UPDATE Dados SET Data = @data, Evento = @evento, Livro = @numlivro, Folha = @numfolha, Receitas = @receitas, Despesas = @despesas WHERE ID = @id");
+            db.ExecuteNoQuery("UPDATE Dados SET Data = @data, Evento = @evento, Livro = @numlivro, Folha = @numfolha, Receita = @receitas, Despesas = @despesas WHERE ID = @id");
         }
 
-        public SQLiteDataReader SelectDao(DateTime calendar)
-        //{
+        public static List<Livro> SelectDao()
+        {
             Model.DataBase db = new Model.DataBase();
-
+            SQLiteDataReader dr;
             db.OpenConnection();
-            db.AddParameter("@calendar", calendar, DbType.DateTime);
+       
+            dr = db.ExecuteReader("SELECT * FROM Dados");
 
-            return db.ExecuteReader("SELECT * FROM Config WHERE Data = @calendar");     
+            Livro livro = new Livro();
+            List<Livro> livros = new List<Livro>();
+
+            while (dr.Read())
+            {
+                livro.Data = Convert.ToDateTime(dr["Data"]);
+                livro.Evento = Convert.ToString(dr["Evento"]);
+                livro.NumLivro = Convert.ToInt32(dr["Livro"]);
+                livro.NumFolha = Convert.ToInt32(dr["Folha"]);
+                livro.Receitas = Convert.ToDecimal(dr["Receita"]);
+                livro.Despesas = Convert.ToDecimal(dr["Despesas"]);
+                livros.Add(livro);
+            }
+
+            return livros;
         }
     }
 }

@@ -58,15 +58,23 @@ namespace Livro.View
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            Model.Livro objetoLivro = new Model.Livro(Convert.ToDateTime(datecalendarinsert.Text), eventinsertTxt.Text, Convert.ToInt32(livroinsertTxt.Text), Convert.ToInt32(folhainsertTxt.Text), Convert.ToDecimal(receitasinsertTxt.Text), Convert.ToDecimal(despesasinsertTxt.Text));
-            string id = idupdateTxt.Text;
-            ClassController.UpdateController(objetoLivro, id);
+            Model.Livro objetoLivro2 = new Model.Livro(Convert.ToDateTime(datecalendarupdate.Text), eventupdateTxt.Text, Convert.ToInt32(livroupdateTxt.Text), Convert.ToInt32(folhaupdateTxt.Text), Convert.ToDecimal(receitasupdateTxt.Text), Convert.ToDecimal(despesasupdateTxt.Text));
+            int id = Convert.ToInt32(idupdateTxt.Text);
+            ClassController.UpdateController(objetoLivro2, id);
         }
 
         private void srcBtn_Click(object sender, EventArgs e)
         {
-            DateTime src = Convert.ToDateTime(datecalendarselect);
-            ClassController.SelectController(src);
+            dataGridView1.DataSource = ClassController.SelectController();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void datecalendarselect_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

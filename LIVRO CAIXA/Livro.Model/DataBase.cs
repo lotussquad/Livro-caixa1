@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Data;
 using System.Data.Sql;
 using System.Data.SQLite;
@@ -14,7 +15,7 @@ namespace Livro.Model
         private SQLiteConnection conn { get; set; }
         private string stringConnection { get; set; }
         private List<SQLiteParameter> listaParameter = new List<SQLiteParameter>();
-        string pathBanco = "Jericho.db"; //Aqui é definido o caminho do banco
+        string pathBanco = @"C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\DatabaseLC.db"; //Aqui é definido o caminho do banco
         public DataBase()
         {
             try

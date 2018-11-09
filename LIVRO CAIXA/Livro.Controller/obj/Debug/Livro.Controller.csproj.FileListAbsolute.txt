@@ -45,3 +45,14 @@ C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\
 C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\System.Data.SQLite.xml
 C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\x64\SQLite.Interop.dll
 C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\x64\SQLite.Interop.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Controller.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Controller.pdb
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Model.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\System.Data.SQLite.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Model.pdb
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\Livro.Model.dll.config
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\System.Data.SQLite.xml
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Controller\obj\Debug\Livro.Controller.csproj.CopyComplete

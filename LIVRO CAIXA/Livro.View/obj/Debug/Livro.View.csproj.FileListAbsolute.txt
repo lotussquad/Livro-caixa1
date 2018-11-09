@@ -57,7 +57,6 @@ C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\De
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\Livro.Model.pdb
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\obj\Debug\Livro.View.csprojAssemblyReference.cache
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\obj\Debug\Livro.View.Form1.resources
-C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\obj\Debug\Livro.View.Print.resources
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\obj\Debug\Livro.View.Properties.Resources.resources
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\obj\Debug\Livro.View.csproj.GenerateResource.cache
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\obj\Debug\Livro.View.csproj.CoreCompileInputs.cache
@@ -82,3 +81,9 @@ C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\De
 C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\System.Data.SQLite.xml
 C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\x64\SQLite.Interop.dll
 C:\Users\17000004486\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\x64\SQLite.Interop.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\x86\SQLite.Interop.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\System.Data.SQLite.dll
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\Livro.Model.dll.config
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\System.Data.SQLite.xml
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.View\bin\Debug\System.Data.SQLite.dll.config

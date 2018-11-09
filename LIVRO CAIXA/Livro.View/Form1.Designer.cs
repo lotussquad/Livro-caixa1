@@ -70,13 +70,18 @@
             this.eventupdateTxt = new System.Windows.Forms.TextBox();
             this.updateBtn = new System.Windows.Forms.Button();
             this.TabSelect = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.srcBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.relatorioBtn = new System.Windows.Forms.Button();
             this.datesrclbl = new System.Windows.Forms.Label();
-            this.datecalendarselect = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.selectImpressora = new System.Windows.Forms.ComboBox();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.TabControl.SuspendLayout();
             this.TabInserir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -475,12 +480,16 @@
             // TabSelect
             // 
             this.TabSelect.BackColor = System.Drawing.Color.White;
+            this.TabSelect.Controls.Add(this.btnPrint);
+            this.TabSelect.Controls.Add(this.label6);
+            this.TabSelect.Controls.Add(this.selectImpressora);
+            this.TabSelect.Controls.Add(this.button1);
+            this.TabSelect.Controls.Add(this.label5);
+            this.TabSelect.Controls.Add(this.dateTimePicker1);
             this.TabSelect.Controls.Add(this.srcBtn);
             this.TabSelect.Controls.Add(this.label2);
             this.TabSelect.Controls.Add(this.pictureBox1);
-            this.TabSelect.Controls.Add(this.relatorioBtn);
             this.TabSelect.Controls.Add(this.datesrclbl);
-            this.TabSelect.Controls.Add(this.datecalendarselect);
             this.TabSelect.Controls.Add(this.dataGridView1);
             this.TabSelect.Location = new System.Drawing.Point(4, 22);
             this.TabSelect.Name = "TabSelect";
@@ -489,9 +498,35 @@
             this.TabSelect.TabIndex = 3;
             this.TabSelect.Text = "RELATÓRIO";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(301, 307);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "BUSCAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(286, 262);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 13);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "BUSCA POR DATA";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(240, 281);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 36;
+            // 
             // srcBtn
             // 
-            this.srcBtn.Location = new System.Drawing.Point(527, 107);
+            this.srcBtn.Location = new System.Drawing.Point(94, 296);
             this.srcBtn.Name = "srcBtn";
             this.srcBtn.Size = new System.Drawing.Size(75, 23);
             this.srcBtn.TabIndex = 35;
@@ -519,50 +554,66 @@
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
-            // relatorioBtn
-            // 
-            this.relatorioBtn.Location = new System.Drawing.Point(466, 182);
-            this.relatorioBtn.Name = "relatorioBtn";
-            this.relatorioBtn.Size = new System.Drawing.Size(200, 161);
-            this.relatorioBtn.TabIndex = 30;
-            this.relatorioBtn.Text = "GERAR RELATÓRIO";
-            this.relatorioBtn.UseVisualStyleBackColor = true;
-            this.relatorioBtn.Click += new System.EventHandler(this.relatorioBtn_Click);
-            // 
             // datesrclbl
             // 
             this.datesrclbl.AutoSize = true;
-            this.datesrclbl.Location = new System.Drawing.Point(512, 62);
+            this.datesrclbl.Location = new System.Drawing.Point(63, 269);
             this.datesrclbl.Name = "datesrclbl";
-            this.datesrclbl.Size = new System.Drawing.Size(107, 13);
+            this.datesrclbl.Size = new System.Drawing.Size(141, 13);
             this.datesrclbl.TabIndex = 29;
-            this.datesrclbl.Text = "DATA PARA BUSCA";
-            // 
-            // datecalendarselect
-            // 
-            this.datecalendarselect.Location = new System.Drawing.Point(466, 81);
-            this.datecalendarselect.Name = "datecalendarselect";
-            this.datecalendarselect.Size = new System.Drawing.Size(200, 20);
-            this.datecalendarselect.TabIndex = 28;
-            this.datecalendarselect.ValueChanged += new System.EventHandler(this.datecalendarselect_ValueChanged);
+            this.datesrclbl.Text = "BUSCA GERAL DE DADOS";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 81);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(452, 271);
+            this.dataGridView1.Size = new System.Drawing.Size(617, 157);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(522, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(81, 13);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "IMPRESSORA:";
+            // 
+            // selectImpressora
+            // 
+            this.selectImpressora.FormattingEnabled = true;
+            this.selectImpressora.Location = new System.Drawing.Point(502, 274);
+            this.selectImpressora.Name = "selectImpressora";
+            this.selectImpressora.Size = new System.Drawing.Size(121, 21);
+            this.selectImpressora.TabIndex = 43;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(525, 301);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 45;
+            this.btnPrint.Text = "IMPRIMIR";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 376);
+            this.ClientSize = new System.Drawing.Size(684, 376);
             this.Controls.Add(this.TabControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LIVRO CAIXA";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.TabControl.ResumeLayout(false);
@@ -620,9 +671,7 @@
         private System.Windows.Forms.Label idupdatelbl;
         private System.Windows.Forms.TextBox idupdateTxt;
         private System.Windows.Forms.Label receitaslblupdate;
-        private System.Windows.Forms.DateTimePicker datecalendarselect;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button relatorioBtn;
         private System.Windows.Forms.Label datesrclbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -633,6 +682,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button insertBtn;
         private System.Windows.Forms.Button srcBtn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox selectImpressora;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 

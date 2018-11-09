@@ -56,7 +56,7 @@ namespace Livro.Model
             db.ExecuteNoQuery("UPDATE Dados SET Data = @data, Evento = @evento, Livro = @numlivro, Folha = @numfolha, Receita = @receitas, Despesas = @despesas WHERE ID = @id");
         }
 
-        public static List<Livro> SelectDao()
+        public static List<Livro> SelectAllDao()
         {
             Model.DataBase db = new Model.DataBase();
             SQLiteDataReader dr;
@@ -80,5 +80,32 @@ namespace Livro.Model
 
             return livros;
         }
+
+        public static List<Livro> SelectDataDao(DateTime datasrc)
+        {
+            Model.DataBase db = new Model.DataBase();
+            SQLiteDataReader dr;
+            db.OpenConnection();
+            db.AddParameter("@data", datasrc, DbType.DateTime);
+
+            dr = db.ExecuteReader("SELECT * FROM Dados where Data = @Data");
+
+            Livro livro = new Livro();
+            List<Livro> livros = new List<Livro>();
+
+            while (dr.Read())
+            {
+                livro.Data = Convert.ToDateTime(dr["Data"]);
+                livro.Evento = Convert.ToString(dr["Evento"]);
+                livro.NumLivro = Convert.ToInt32(dr["Livro"]);
+                livro.NumFolha = Convert.ToInt32(dr["Folha"]);
+                livro.Receitas = Convert.ToDecimal(dr["Receita"]);
+                livro.Despesas = Convert.ToDecimal(dr["Despesas"]);
+                livros.Add(livro);
+            }
+
+            return livros;
+        }
+
     }
 }

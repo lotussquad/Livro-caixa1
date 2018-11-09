@@ -26,15 +26,23 @@ namespace Livro.Controller
             Model.LivroDao.UpdateDao(objetoLivro, id);
         }
 
-        public static List<Model.Livro> SelectController()
+        public static List<Model.Livro> SelectAllController()
         {
             Model.Livro livro = new Model.Livro();
             List<Model.Livro> livros = new List<Model.Livro>();
 
-            livros =  Model.LivroDao.SelectDao();
+            livros =  Model.LivroDao.SelectAllDao();
             return livros;
         }
 
+        public static List<Model.Livro> SelectDataController(DateTime datasrc)
+        {
+            Model.Livro livro = new Model.Livro();
+            List<Model.Livro> livros = new List<Model.Livro>();
+
+            livros = Model.LivroDao.SelectDataDao(datasrc);
+            return livros;
+        }
 
     }
 }

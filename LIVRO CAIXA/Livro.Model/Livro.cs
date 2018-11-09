@@ -8,7 +8,7 @@ namespace Livro.Model
 {
     public class Livro
     {
-
+        private string id;
         private DateTime data;
         private string evento;
         private int numLivro;
@@ -110,5 +110,24 @@ namespace Livro.Model
             this.Despesas = despesas;
         }
 
+        public Livro(string evento, int numLivro, int numFolha, decimal receitas, decimal despesas)
+        {
+            this.evento = evento;
+            this.numLivro = numLivro;
+            this.numFolha = numFolha;
+            this.receitas = receitas;
+            this.despesas = despesas;
+        }
+
+        public Livro(string id, DateTime data, string evento, int numLivro, int numFolha, decimal receitas, decimal despesas)
+        {
+            this.id = id;
+            this.data = data;
+            this.evento = evento;
+            this.numLivro = numLivro;
+            this.numFolha = numFolha;
+            this.receitas = receitas;
+            this.despesas = despesas;
+        }
     }
 }

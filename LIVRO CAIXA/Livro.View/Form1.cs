@@ -32,13 +32,11 @@ namespace Livro.View
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-
+            LoadPrinters();
         }
 
         private void relatorioBtn_Click(object sender, EventArgs e)
         {
-            Print printForm = new Print();
-            printForm.Show();
 
         }
 
@@ -65,7 +63,10 @@ namespace Livro.View
 
         private void srcBtn_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = ClassController.SelectController();
+            List<Model.Livro> livro = new List<Model.Livro>();
+            livro =  ClassController.SelectAllController();
+
+            dataGridView1.DataSource = livro;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -75,6 +76,46 @@ namespace Livro.View
         private void datecalendarselect_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DateTime datasrc = Convert.ToDateTime(DateTime.Now.Year +"/"+ DateTime.Now.Month +"/"+ DateTime.Now.Day);
+
+            List<Model.Livro> livro = new List<Model.Livro>();
+            livro = ClassController.SelectDataController(datasrc);
+
+             dataGridView1.DataSource = livro;
+        }
+
+        public void LoadPrinters()
+        {
+            foreach (var impressora in System.Drawing.Printing.PrinterSettings.InstalledPrinters)
+            {
+                selectImpressora.Items.Add(impressora);
+            }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            using (var pd= new System.Drawing.Printing.PrintDocument())
+            {
+                pd.PrinterSettings.PrinterName = selectImpressora.SelectedItem.ToString();
+                pd.PrintPage += printDocument1_PrintPage;
+                pd.Print();
+
+            }
+        }
+
+        public List<Model.Livro> print = new List<Model.Livro>();
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            using (var font = new Font("Times New Roman", 14))
+            using (var brush = new SolidBrush(Color.Black))
+            {
+                e.Graphics.DrawString("teste", font, brush, e.MarginBounds);
+            }
         }
     }
 }

@@ -119,6 +119,14 @@ namespace Livro.Model
             this.despesas = despesas;
         }
 
+        public Livro(DateTime data, string evento, decimal receitas, decimal despesas)
+        {
+            this.Data = data;
+            this.Evento = evento;
+            this.Receitas = receitas;
+            this.Despesas = despesas;
+        }
+
         public Livro(string id, DateTime data, string evento, int numLivro, int numFolha, decimal receitas, decimal despesas)
         {
             this.id = id;

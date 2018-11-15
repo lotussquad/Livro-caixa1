@@ -20,7 +20,6 @@ C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.csproj.CoreCompileInputs.cache
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.dll
 C:\Users\BarryFallens\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.pdb
-C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.csprojAssemblyReference.cache
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.csproj.CoreCompileInputs.cache
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.dll
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.pdb
@@ -55,3 +54,4 @@ C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\bin\D
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\bin\Debug\System.Data.SQLite.xml
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.csproj.CopyComplete
+C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\Livro.Model\obj\Debug\Livro.Model.csprojAssemblyReference.cache

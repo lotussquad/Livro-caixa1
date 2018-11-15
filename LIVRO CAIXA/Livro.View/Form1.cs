@@ -33,6 +33,7 @@ namespace Livro.View
         private void Form1_Load_1(object sender, EventArgs e)
         {
             LoadPrinters();
+            this.reportViewer1.RefreshReport();
         }
 
         private void relatorioBtn_Click(object sender, EventArgs e)
@@ -42,11 +43,25 @@ namespace Livro.View
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int livro = Convert.ToInt32(DateTime.Now.Year);
+            int[] cfgEnd = new int[2];
+            cfgEnd = ConfigController.SelectCfg();
 
+            int cont = Convert.ToInt32(cfgEnd[0]);
+            int folha = Convert.ToInt32(cfgEnd[1]);
 
-            Model.Livro objetoLivro = new Model.Livro(Convert.ToDateTime(datecalendarinsert.Text), eventinsertTxt.Text, Convert.ToInt32(livroinsertTxt.Text), Convert.ToInt32(folhainsertTxt.Text), Convert.ToDecimal(receitasinsertTxt.Text), Convert.ToDecimal(despesasinsertTxt.Text));
+            if (cont == 11)
+            {
+                cont = 1;
+                folha = folha + 1;
+            }
 
+            Model.Livro objetoLivro = new Model.Livro(Convert.ToDateTime(datecalendarinsert.Text), eventinsertTxt.Text, livro, folha, Convert.ToDecimal(receitasinsertTxt.Text), Convert.ToDecimal(despesasinsertTxt.Text));
             ClassController.InsertController(objetoLivro);
+
+            cont = cont + 1;
+            
+            ConfigController.UpdateCfg(cont, folha);
         }
 
         private void despesasinsertTxt_TextChanged(object sender, EventArgs e)
@@ -56,7 +71,7 @@ namespace Livro.View
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            Model.Livro objetoLivro2 = new Model.Livro(Convert.ToDateTime(datecalendarupdate.Text), eventupdateTxt.Text, Convert.ToInt32(livroupdateTxt.Text), Convert.ToInt32(folhaupdateTxt.Text), Convert.ToDecimal(receitasupdateTxt.Text), Convert.ToDecimal(despesasupdateTxt.Text));
+            Model.Livro objetoLivro2 = new Model.Livro(Convert.ToDateTime(datecalendarupdate.Text), eventupdateTxt.Text, Convert.ToDecimal(receitasupdateTxt.Text), Convert.ToDecimal(despesasupdateTxt.Text));
             int id = Convert.ToInt32(idupdateTxt.Text);
             ClassController.UpdateController(objetoLivro2, id);
         }
@@ -98,7 +113,11 @@ namespace Livro.View
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            using (var pd= new System.Drawing.Printing.PrintDocument())
+            int numFolha = Convert.ToInt32(txtFolhaPrinter.Text);
+            List<Model.Livro> pagePrint = new List<Model.Livro>();
+            pagePrint = ClassController.SelectFolhaController(numFolha);
+
+            using (var pd = new System.Drawing.Printing.PrintDocument())
             {
                 pd.PrinterSettings.PrinterName = selectImpressora.SelectedItem.ToString();
                 pd.PrintPage += printDocument1_PrintPage;
@@ -114,8 +133,17 @@ namespace Livro.View
             using (var font = new Font("Times New Roman", 14))
             using (var brush = new SolidBrush(Color.Black))
             {
-                e.Graphics.DrawString("teste", font, brush, e.MarginBounds);
+                e.Graphics.DrawString("teste1 teste2 teste3 teste4 teste5 teste6\n " +
+                    "teste6 teste5 teste4 teste3 teste2 teste1", font, brush, e.MarginBounds);
+
             }
+        }
+
+
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

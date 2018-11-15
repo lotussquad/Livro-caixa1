@@ -48,12 +48,10 @@ namespace Livro.Model
             db.AddParameter("@id", id, DbType.Int32);
             db.AddParameter("@data", objetolivro.Data, DbType.DateTime);
             db.AddParameter("@evento", objetolivro.Evento, DbType.String);
-            db.AddParameter("@numlivro", objetolivro.NumLivro, DbType.Int32);
-            db.AddParameter("@numfolha", objetolivro.NumFolha, DbType.Int32);
             db.AddParameter("@receitas", objetolivro.Receitas, DbType.Decimal);
             db.AddParameter("@despesas", objetolivro.Despesas, DbType.Decimal);
 
-            db.ExecuteNoQuery("UPDATE Dados SET Data = @data, Evento = @evento, Livro = @numlivro, Folha = @numfolha, Receita = @receitas, Despesas = @despesas WHERE ID = @id");
+            db.ExecuteNoQuery("UPDATE Dados SET Data = @data, Evento = @evento, Receita = @receitas, Despesas = @despesas WHERE ID = @id");
         }
 
         public static List<Livro> SelectAllDao()
@@ -64,11 +62,12 @@ namespace Livro.Model
        
             dr = db.ExecuteReader("SELECT * FROM Dados");
 
-            Livro livro = new Livro();
+
             List<Livro> livros = new List<Livro>();
 
             while (dr.Read())
             {
+                Livro livro = new Livro();
                 livro.Data = Convert.ToDateTime(dr["Data"]);
                 livro.Evento = Convert.ToString(dr["Evento"]);
                 livro.NumLivro = Convert.ToInt32(dr["Livro"]);
@@ -90,11 +89,39 @@ namespace Livro.Model
 
             dr = db.ExecuteReader("SELECT * FROM Dados where Data = @Data");
 
-            Livro livro = new Livro();
+
             List<Livro> livros = new List<Livro>();
 
             while (dr.Read())
             {
+                Livro livro = new Livro();
+                livro.Data = Convert.ToDateTime(dr["Data"]);
+                livro.Evento = Convert.ToString(dr["Evento"]);
+                livro.NumLivro = Convert.ToInt32(dr["Livro"]);
+                livro.NumFolha = Convert.ToInt32(dr["Folha"]);
+                livro.Receitas = Convert.ToDecimal(dr["Receita"]);
+                livro.Despesas = Convert.ToDecimal(dr["Despesas"]);
+                livros.Add(livro);
+            }
+
+            return livros;
+        }
+
+        public static List<Livro> SelectFolhaDao(int folha)
+        {
+            Model.DataBase db = new Model.DataBase();
+            SQLiteDataReader dr;
+            db.OpenConnection();
+            db.AddParameter("@folha", folha, DbType.Int32);
+
+            dr = db.ExecuteReader("SELECT * FROM Dados where Folha = @folha");
+
+
+            List<Livro> livros = new List<Livro>();
+
+            while (dr.Read())
+            {
+                Livro livro = new Livro();
                 livro.Data = Convert.ToDateTime(dr["Data"]);
                 livro.Evento = Convert.ToString(dr["Evento"]);
                 livro.NumLivro = Convert.ToInt32(dr["Livro"]);

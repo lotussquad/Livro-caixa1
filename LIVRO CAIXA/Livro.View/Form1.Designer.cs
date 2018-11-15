@@ -37,14 +37,10 @@
             this.datecalendarinsert = new System.Windows.Forms.DateTimePicker();
             this.despesaslblinsert = new System.Windows.Forms.Label();
             this.receitalblinsert = new System.Windows.Forms.Label();
-            this.folhalblinsert = new System.Windows.Forms.Label();
-            this.livrolblinsert = new System.Windows.Forms.Label();
             this.eventlblinsert = new System.Windows.Forms.Label();
             this.datelblinsert = new System.Windows.Forms.Label();
             this.receitasinsertTxt = new System.Windows.Forms.TextBox();
-            this.livroinsertTxt = new System.Windows.Forms.TextBox();
             this.despesasinsertTxt = new System.Windows.Forms.TextBox();
-            this.folhainsertTxt = new System.Windows.Forms.TextBox();
             this.eventinsertTxt = new System.Windows.Forms.TextBox();
             this.TabDelete = new System.Windows.Forms.TabPage();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -59,17 +55,17 @@
             this.datecalendarupdate = new System.Windows.Forms.DateTimePicker();
             this.despesaslblupdate = new System.Windows.Forms.Label();
             this.receitaslblupdate = new System.Windows.Forms.Label();
-            this.folhalblupdate = new System.Windows.Forms.Label();
-            this.livrolblupdate = new System.Windows.Forms.Label();
             this.eventlblupdate = new System.Windows.Forms.Label();
             this.datelblupdate = new System.Windows.Forms.Label();
             this.receitasupdateTxt = new System.Windows.Forms.TextBox();
-            this.livroupdateTxt = new System.Windows.Forms.TextBox();
             this.despesasupdateTxt = new System.Windows.Forms.TextBox();
-            this.folhaupdateTxt = new System.Windows.Forms.TextBox();
             this.eventupdateTxt = new System.Windows.Forms.TextBox();
             this.updateBtn = new System.Windows.Forms.Button();
             this.TabSelect = new System.Windows.Forms.TabPage();
+            this.txtFolhaPrinter = new System.Windows.Forms.TextBox();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.selectImpressora = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -78,10 +74,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.datesrclbl = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.selectImpressora = new System.Windows.Forms.ComboBox();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label1 = new System.Windows.Forms.Label();
             this.TabControl.SuspendLayout();
             this.TabInserir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -109,20 +103,17 @@
             // TabInserir
             // 
             this.TabInserir.BackColor = System.Drawing.Color.White;
+            this.TabInserir.Controls.Add(this.label1);
             this.TabInserir.Controls.Add(this.insertBtn);
             this.TabInserir.Controls.Add(this.label4);
             this.TabInserir.Controls.Add(this.pictureBox4);
             this.TabInserir.Controls.Add(this.datecalendarinsert);
             this.TabInserir.Controls.Add(this.despesaslblinsert);
             this.TabInserir.Controls.Add(this.receitalblinsert);
-            this.TabInserir.Controls.Add(this.folhalblinsert);
-            this.TabInserir.Controls.Add(this.livrolblinsert);
             this.TabInserir.Controls.Add(this.eventlblinsert);
             this.TabInserir.Controls.Add(this.datelblinsert);
             this.TabInserir.Controls.Add(this.receitasinsertTxt);
-            this.TabInserir.Controls.Add(this.livroinsertTxt);
             this.TabInserir.Controls.Add(this.despesasinsertTxt);
-            this.TabInserir.Controls.Add(this.folhainsertTxt);
             this.TabInserir.Controls.Add(this.eventinsertTxt);
             this.TabInserir.Location = new System.Drawing.Point(4, 22);
             this.TabInserir.Name = "TabInserir";
@@ -133,7 +124,7 @@
             // 
             // insertBtn
             // 
-            this.insertBtn.Location = new System.Drawing.Point(197, 263);
+            this.insertBtn.Location = new System.Drawing.Point(197, 259);
             this.insertBtn.Name = "insertBtn";
             this.insertBtn.Size = new System.Drawing.Size(282, 68);
             this.insertBtn.TabIndex = 36;
@@ -163,7 +154,7 @@
             // 
             // datecalendarinsert
             // 
-            this.datecalendarinsert.Location = new System.Drawing.Point(90, 99);
+            this.datecalendarinsert.Location = new System.Drawing.Point(90, 118);
             this.datecalendarinsert.Name = "datecalendarinsert";
             this.datecalendarinsert.Size = new System.Drawing.Size(227, 20);
             this.datecalendarinsert.TabIndex = 14;
@@ -171,7 +162,7 @@
             // despesaslblinsert
             // 
             this.despesaslblinsert.AutoSize = true;
-            this.despesaslblinsert.Location = new System.Drawing.Point(352, 199);
+            this.despesaslblinsert.Location = new System.Drawing.Point(352, 184);
             this.despesaslblinsert.Name = "despesaslblinsert";
             this.despesaslblinsert.Size = new System.Drawing.Size(67, 13);
             this.despesaslblinsert.TabIndex = 12;
@@ -180,34 +171,16 @@
             // receitalblinsert
             // 
             this.receitalblinsert.AutoSize = true;
-            this.receitalblinsert.Location = new System.Drawing.Point(24, 199);
+            this.receitalblinsert.Location = new System.Drawing.Point(24, 184);
             this.receitalblinsert.Name = "receitalblinsert";
             this.receitalblinsert.Size = new System.Drawing.Size(63, 13);
             this.receitalblinsert.TabIndex = 11;
             this.receitalblinsert.Text = "RECEITAS:";
             // 
-            // folhalblinsert
-            // 
-            this.folhalblinsert.AutoSize = true;
-            this.folhalblinsert.Location = new System.Drawing.Point(365, 149);
-            this.folhalblinsert.Name = "folhalblinsert";
-            this.folhalblinsert.Size = new System.Drawing.Size(45, 13);
-            this.folhalblinsert.TabIndex = 10;
-            this.folhalblinsert.Text = "FOLHA:";
-            // 
-            // livrolblinsert
-            // 
-            this.livrolblinsert.AutoSize = true;
-            this.livrolblinsert.Location = new System.Drawing.Point(38, 149);
-            this.livrolblinsert.Name = "livrolblinsert";
-            this.livrolblinsert.Size = new System.Drawing.Size(42, 13);
-            this.livrolblinsert.TabIndex = 9;
-            this.livrolblinsert.Text = "LIVRO:";
-            // 
             // eventlblinsert
             // 
             this.eventlblinsert.AutoSize = true;
-            this.eventlblinsert.Location = new System.Drawing.Point(365, 102);
+            this.eventlblinsert.Location = new System.Drawing.Point(365, 121);
             this.eventlblinsert.Name = "eventlblinsert";
             this.eventlblinsert.Size = new System.Drawing.Size(54, 13);
             this.eventlblinsert.TabIndex = 8;
@@ -216,7 +189,7 @@
             // datelblinsert
             // 
             this.datelblinsert.AutoSize = true;
-            this.datelblinsert.Location = new System.Drawing.Point(45, 102);
+            this.datelblinsert.Location = new System.Drawing.Point(45, 121);
             this.datelblinsert.Name = "datelblinsert";
             this.datelblinsert.Size = new System.Drawing.Size(39, 13);
             this.datelblinsert.TabIndex = 7;
@@ -224,36 +197,22 @@
             // 
             // receitasinsertTxt
             // 
-            this.receitasinsertTxt.Location = new System.Drawing.Point(90, 195);
+            this.receitasinsertTxt.Location = new System.Drawing.Point(90, 180);
             this.receitasinsertTxt.Name = "receitasinsertTxt";
             this.receitasinsertTxt.Size = new System.Drawing.Size(227, 20);
             this.receitasinsertTxt.TabIndex = 6;
             // 
-            // livroinsertTxt
-            // 
-            this.livroinsertTxt.Location = new System.Drawing.Point(90, 146);
-            this.livroinsertTxt.Name = "livroinsertTxt";
-            this.livroinsertTxt.Size = new System.Drawing.Size(227, 20);
-            this.livroinsertTxt.TabIndex = 5;
-            // 
             // despesasinsertTxt
             // 
-            this.despesasinsertTxt.Location = new System.Drawing.Point(425, 195);
+            this.despesasinsertTxt.Location = new System.Drawing.Point(425, 180);
             this.despesasinsertTxt.Name = "despesasinsertTxt";
             this.despesasinsertTxt.Size = new System.Drawing.Size(209, 20);
             this.despesasinsertTxt.TabIndex = 4;
             this.despesasinsertTxt.TextChanged += new System.EventHandler(this.despesasinsertTxt_TextChanged);
             // 
-            // folhainsertTxt
-            // 
-            this.folhainsertTxt.Location = new System.Drawing.Point(425, 146);
-            this.folhainsertTxt.Name = "folhainsertTxt";
-            this.folhainsertTxt.Size = new System.Drawing.Size(209, 20);
-            this.folhainsertTxt.TabIndex = 3;
-            // 
             // eventinsertTxt
             // 
-            this.eventinsertTxt.Location = new System.Drawing.Point(425, 99);
+            this.eventinsertTxt.Location = new System.Drawing.Point(425, 118);
             this.eventinsertTxt.Name = "eventinsertTxt";
             this.eventinsertTxt.Size = new System.Drawing.Size(209, 20);
             this.eventinsertTxt.TabIndex = 2;
@@ -318,14 +277,10 @@
             this.TabUpdate.Controls.Add(this.datecalendarupdate);
             this.TabUpdate.Controls.Add(this.despesaslblupdate);
             this.TabUpdate.Controls.Add(this.receitaslblupdate);
-            this.TabUpdate.Controls.Add(this.folhalblupdate);
-            this.TabUpdate.Controls.Add(this.livrolblupdate);
             this.TabUpdate.Controls.Add(this.eventlblupdate);
             this.TabUpdate.Controls.Add(this.datelblupdate);
             this.TabUpdate.Controls.Add(this.receitasupdateTxt);
-            this.TabUpdate.Controls.Add(this.livroupdateTxt);
             this.TabUpdate.Controls.Add(this.despesasupdateTxt);
-            this.TabUpdate.Controls.Add(this.folhaupdateTxt);
             this.TabUpdate.Controls.Add(this.eventupdateTxt);
             this.TabUpdate.Controls.Add(this.updateBtn);
             this.TabUpdate.Location = new System.Drawing.Point(4, 22);
@@ -358,7 +313,7 @@
             // idupdatelbl
             // 
             this.idupdatelbl.AutoSize = true;
-            this.idupdatelbl.Location = new System.Drawing.Point(331, 233);
+            this.idupdatelbl.Location = new System.Drawing.Point(331, 205);
             this.idupdatelbl.Name = "idupdatelbl";
             this.idupdatelbl.Size = new System.Drawing.Size(21, 13);
             this.idupdatelbl.TabIndex = 29;
@@ -366,14 +321,14 @@
             // 
             // idupdateTxt
             // 
-            this.idupdateTxt.Location = new System.Drawing.Point(263, 249);
+            this.idupdateTxt.Location = new System.Drawing.Point(263, 221);
             this.idupdateTxt.Name = "idupdateTxt";
             this.idupdateTxt.Size = new System.Drawing.Size(173, 20);
             this.idupdateTxt.TabIndex = 28;
             // 
             // datecalendarupdate
             // 
-            this.datecalendarupdate.Location = new System.Drawing.Point(79, 88);
+            this.datecalendarupdate.Location = new System.Drawing.Point(79, 104);
             this.datecalendarupdate.Name = "datecalendarupdate";
             this.datecalendarupdate.Size = new System.Drawing.Size(200, 20);
             this.datecalendarupdate.TabIndex = 27;
@@ -381,7 +336,7 @@
             // despesaslblupdate
             // 
             this.despesaslblupdate.AutoSize = true;
-            this.despesaslblupdate.Location = new System.Drawing.Point(377, 187);
+            this.despesaslblupdate.Location = new System.Drawing.Point(377, 161);
             this.despesaslblupdate.Name = "despesaslblupdate";
             this.despesaslblupdate.Size = new System.Drawing.Size(67, 13);
             this.despesaslblupdate.TabIndex = 26;
@@ -390,34 +345,16 @@
             // receitaslblupdate
             // 
             this.receitaslblupdate.AutoSize = true;
-            this.receitaslblupdate.Location = new System.Drawing.Point(10, 187);
+            this.receitaslblupdate.Location = new System.Drawing.Point(10, 163);
             this.receitaslblupdate.Name = "receitaslblupdate";
             this.receitaslblupdate.Size = new System.Drawing.Size(63, 13);
             this.receitaslblupdate.TabIndex = 25;
             this.receitaslblupdate.Text = "RECEITAS:";
             // 
-            // folhalblupdate
-            // 
-            this.folhalblupdate.AutoSize = true;
-            this.folhalblupdate.Location = new System.Drawing.Point(399, 135);
-            this.folhalblupdate.Name = "folhalblupdate";
-            this.folhalblupdate.Size = new System.Drawing.Size(45, 13);
-            this.folhalblupdate.TabIndex = 24;
-            this.folhalblupdate.Text = "FOLHA:";
-            // 
-            // livrolblupdate
-            // 
-            this.livrolblupdate.AutoSize = true;
-            this.livrolblupdate.Location = new System.Drawing.Point(31, 135);
-            this.livrolblupdate.Name = "livrolblupdate";
-            this.livrolblupdate.Size = new System.Drawing.Size(42, 13);
-            this.livrolblupdate.TabIndex = 23;
-            this.livrolblupdate.Text = "LIVRO:";
-            // 
             // eventlblupdate
             // 
             this.eventlblupdate.AutoSize = true;
-            this.eventlblupdate.Location = new System.Drawing.Point(390, 88);
+            this.eventlblupdate.Location = new System.Drawing.Point(390, 104);
             this.eventlblupdate.Name = "eventlblupdate";
             this.eventlblupdate.Size = new System.Drawing.Size(54, 13);
             this.eventlblupdate.TabIndex = 22;
@@ -426,7 +363,7 @@
             // datelblupdate
             // 
             this.datelblupdate.AutoSize = true;
-            this.datelblupdate.Location = new System.Drawing.Point(34, 88);
+            this.datelblupdate.Location = new System.Drawing.Point(34, 104);
             this.datelblupdate.Name = "datelblupdate";
             this.datelblupdate.Size = new System.Drawing.Size(39, 13);
             this.datelblupdate.TabIndex = 21;
@@ -434,35 +371,21 @@
             // 
             // receitasupdateTxt
             // 
-            this.receitasupdateTxt.Location = new System.Drawing.Point(79, 184);
+            this.receitasupdateTxt.Location = new System.Drawing.Point(79, 158);
             this.receitasupdateTxt.Name = "receitasupdateTxt";
             this.receitasupdateTxt.Size = new System.Drawing.Size(173, 20);
             this.receitasupdateTxt.TabIndex = 20;
             // 
-            // livroupdateTxt
-            // 
-            this.livroupdateTxt.Location = new System.Drawing.Point(79, 132);
-            this.livroupdateTxt.Name = "livroupdateTxt";
-            this.livroupdateTxt.Size = new System.Drawing.Size(173, 20);
-            this.livroupdateTxt.TabIndex = 19;
-            // 
             // despesasupdateTxt
             // 
-            this.despesasupdateTxt.Location = new System.Drawing.Point(450, 184);
+            this.despesasupdateTxt.Location = new System.Drawing.Point(450, 158);
             this.despesasupdateTxt.Name = "despesasupdateTxt";
             this.despesasupdateTxt.Size = new System.Drawing.Size(173, 20);
             this.despesasupdateTxt.TabIndex = 18;
             // 
-            // folhaupdateTxt
-            // 
-            this.folhaupdateTxt.Location = new System.Drawing.Point(450, 132);
-            this.folhaupdateTxt.Name = "folhaupdateTxt";
-            this.folhaupdateTxt.Size = new System.Drawing.Size(173, 20);
-            this.folhaupdateTxt.TabIndex = 17;
-            // 
             // eventupdateTxt
             // 
-            this.eventupdateTxt.Location = new System.Drawing.Point(450, 85);
+            this.eventupdateTxt.Location = new System.Drawing.Point(450, 101);
             this.eventupdateTxt.Name = "eventupdateTxt";
             this.eventupdateTxt.Size = new System.Drawing.Size(173, 20);
             this.eventupdateTxt.TabIndex = 16;
@@ -480,6 +403,7 @@
             // TabSelect
             // 
             this.TabSelect.BackColor = System.Drawing.Color.White;
+            this.TabSelect.Controls.Add(this.txtFolhaPrinter);
             this.TabSelect.Controls.Add(this.btnPrint);
             this.TabSelect.Controls.Add(this.label6);
             this.TabSelect.Controls.Add(this.selectImpressora);
@@ -498,9 +422,43 @@
             this.TabSelect.TabIndex = 3;
             this.TabSelect.Text = "RELATÓRIO";
             // 
+            // txtFolhaPrinter
+            // 
+            this.txtFolhaPrinter.Location = new System.Drawing.Point(573, 272);
+            this.txtFolhaPrinter.Name = "txtFolhaPrinter";
+            this.txtFolhaPrinter.Size = new System.Drawing.Size(60, 20);
+            this.txtFolhaPrinter.TabIndex = 46;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(566, 307);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 45;
+            this.btnPrint.Text = "IMPRIMIR";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(429, 272);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(81, 13);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "IMPRESSORA:";
+            // 
+            // selectImpressora
+            // 
+            this.selectImpressora.FormattingEnabled = true;
+            this.selectImpressora.Location = new System.Drawing.Point(409, 288);
+            this.selectImpressora.Name = "selectImpressora";
+            this.selectImpressora.Size = new System.Drawing.Size(121, 21);
+            this.selectImpressora.TabIndex = 43;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(301, 307);
+            this.button1.Location = new System.Drawing.Point(238, 307);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 38;
@@ -511,7 +469,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(286, 262);
+            this.label5.Location = new System.Drawing.Point(223, 262);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 13);
             this.label5.TabIndex = 37;
@@ -519,14 +477,14 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(240, 281);
+            this.dateTimePicker1.Location = new System.Drawing.Point(177, 281);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 36;
             // 
             // srcBtn
             // 
-            this.srcBtn.Location = new System.Drawing.Point(94, 296);
+            this.srcBtn.Location = new System.Drawing.Point(52, 296);
             this.srcBtn.Name = "srcBtn";
             this.srcBtn.Size = new System.Drawing.Size(75, 23);
             this.srcBtn.TabIndex = 35;
@@ -557,7 +515,7 @@
             // datesrclbl
             // 
             this.datesrclbl.AutoSize = true;
-            this.datesrclbl.Location = new System.Drawing.Point(63, 269);
+            this.datesrclbl.Location = new System.Drawing.Point(21, 269);
             this.datesrclbl.Name = "datesrclbl";
             this.datesrclbl.Size = new System.Drawing.Size(141, 13);
             this.datesrclbl.TabIndex = 29;
@@ -572,42 +530,24 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(522, 258);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 13);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "IMPRESSORA:";
-            // 
-            // selectImpressora
-            // 
-            this.selectImpressora.FormattingEnabled = true;
-            this.selectImpressora.Location = new System.Drawing.Point(502, 274);
-            this.selectImpressora.Name = "selectImpressora";
-            this.selectImpressora.Size = new System.Drawing.Size(121, 21);
-            this.selectImpressora.TabIndex = 43;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Location = new System.Drawing.Point(525, 301);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 23);
-            this.btnPrint.TabIndex = 45;
-            this.btnPrint.Text = "IMPRIMIR";
-            this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
-            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(352, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 376);
+            this.ClientSize = new System.Drawing.Size(686, 376);
             this.Controls.Add(this.TabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -641,14 +581,10 @@
         private System.Windows.Forms.TabPage TabDelete;
         private System.Windows.Forms.Label despesaslblinsert;
         private System.Windows.Forms.Label receitalblinsert;
-        private System.Windows.Forms.Label folhalblinsert;
-        private System.Windows.Forms.Label livrolblinsert;
         private System.Windows.Forms.Label eventlblinsert;
         private System.Windows.Forms.Label datelblinsert;
         private System.Windows.Forms.TextBox receitasinsertTxt;
-        private System.Windows.Forms.TextBox livroinsertTxt;
         private System.Windows.Forms.TextBox despesasinsertTxt;
-        private System.Windows.Forms.TextBox folhainsertTxt;
         private System.Windows.Forms.TextBox eventinsertTxt;
         private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.TextBox iddeleteTxt;
@@ -658,14 +594,10 @@
         private System.Windows.Forms.Label iddeletelbl;
         private System.Windows.Forms.DateTimePicker datecalendarupdate;
         private System.Windows.Forms.Label despesaslblupdate;
-        private System.Windows.Forms.Label folhalblupdate;
-        private System.Windows.Forms.Label livrolblupdate;
         private System.Windows.Forms.Label eventlblupdate;
         private System.Windows.Forms.Label datelblupdate;
         private System.Windows.Forms.TextBox receitasupdateTxt;
-        private System.Windows.Forms.TextBox livroupdateTxt;
         private System.Windows.Forms.TextBox despesasupdateTxt;
-        private System.Windows.Forms.TextBox folhaupdateTxt;
         private System.Windows.Forms.TextBox eventupdateTxt;
         private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Label idupdatelbl;
@@ -689,6 +621,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox selectImpressora;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.TextBox txtFolhaPrinter;
+        private System.Windows.Forms.Label label1;
     }
 }
 

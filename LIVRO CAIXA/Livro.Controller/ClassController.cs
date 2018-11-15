@@ -44,5 +44,14 @@ namespace Livro.Controller
             return livros;
         }
 
+        public static List<Model.Livro> SelectFolhaController(int folha)
+        {
+            Model.Livro livro = new Model.Livro();
+            List<Model.Livro> livros = new List<Model.Livro>();
+
+            livros = Model.LivroDao.SelectFolhaDao(folha);
+            return livros;
+        }
+
     }
 }

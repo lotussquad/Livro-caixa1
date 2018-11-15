@@ -58,6 +58,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="ConfigDao.cs" />
     <Compile Include="DataBase.cs" />
     <Compile Include="Livro.cs" />
     <Compile Include="LivroDao.cs" />

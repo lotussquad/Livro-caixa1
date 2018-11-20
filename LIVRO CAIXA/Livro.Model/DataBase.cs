@@ -15,7 +15,7 @@ namespace Livro.Model
         private SQLiteConnection conn { get; set; }
         private string stringConnection { get; set; }
         private List<SQLiteParameter> listaParameter = new List<SQLiteParameter>();
-        string pathBanco = @"C:\Users\SlowbodaW10\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\DatabaseLC.db"; //Aqui é definido o caminho do banco
+        string pathBanco = @"C:\Users\16000006644\Documents\GitHub\Livro-caixa1\LIVRO CAIXA\DatabaseLC.db"; //Aqui é definido o caminho do banco
         public DataBase()
         {
             try

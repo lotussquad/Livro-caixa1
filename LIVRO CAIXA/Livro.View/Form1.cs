@@ -27,13 +27,12 @@ namespace Livro.View
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            LoadPrinters();
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
             LoadPrinters();
-            this.reportViewer1.RefreshReport();
         }
 
         private void relatorioBtn_Click(object sender, EventArgs e)
@@ -142,6 +141,11 @@ namespace Livro.View
 
 
         private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabInserir_Click(object sender, EventArgs e)
         {
 
         }

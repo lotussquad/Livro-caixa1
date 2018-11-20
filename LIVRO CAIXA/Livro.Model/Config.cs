@@ -11,6 +11,32 @@ namespace Livro.Model
         private int Folha;
         private int Cont;
 
+        public int Folha1
+        {
+            get
+            {
+                return Folha;
+            }
+
+            set
+            {
+                Folha = value;
+            }
+        }
+
+        public int Cont1
+        {
+            get
+            {
+                return Cont;
+            }
+
+            set
+            {
+                Cont = value;
+            }
+        }
+
         public Config()
         {
 
@@ -22,7 +48,5 @@ namespace Livro.Model
             Cont1 = cont;
         }
 
-        public int Folha1 { get => Folha; set => Folha = value; }
-        public int Cont1 { get => Cont; set => Cont = value; }
     }
 }

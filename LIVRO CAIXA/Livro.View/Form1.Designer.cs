@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TabControl = new System.Windows.Forms.TabControl();
             this.TabInserir = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.insertBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -75,7 +76,6 @@
             this.datesrclbl = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.label1 = new System.Windows.Forms.Label();
             this.TabControl.SuspendLayout();
             this.TabInserir.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -121,6 +121,16 @@
             this.TabInserir.Size = new System.Drawing.Size(677, 355);
             this.TabInserir.TabIndex = 0;
             this.TabInserir.Text = "INSERIR ";
+            this.TabInserir.Click += new System.EventHandler(this.TabInserir_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(352, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "label1";
             // 
             // insertBtn
             // 
@@ -533,15 +543,6 @@
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(352, 152);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 37;
-            this.label1.Text = "label1";
             // 
             // Form1
             // 
